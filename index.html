@@ -1,0 +1,144 @@
+<!doctype html>  
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/login.css">
+      
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>Pharma &mdash; Colorlib Template</title>
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+        <link rel="stylesheet" href="./pharma/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./pharma/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./pharma/css/magnific-popup.css">
+        <link rel="stylesheet" href="./pharma/css/jquery-ui.css">
+        <link rel="stylesheet" href="./pharma/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./pharma/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./pharma/css/aos.css">
+        <link rel="stylesheet" href="./pharma/css/style.css">
+
+
+      <script>
+            function myFunction() {
+              var x = document.forms["form1"]["input1"].value;
+              var y = document.forms["form1"]["input2"].value;
+               if (x == "" || y == ""){
+                  alert("The Username or password field is empty")
+               }
+              else if (x == "s534845" && y == "Venki@143") {
+               alert("login successful");
+                window.location.href = "./pharma/index.html"
+              }
+              else if(x == "bearcat" && y == "Bearcat@143"){
+                 alert("admin login successful")
+                 window.location.href = "./adminindex.html"
+              }
+              else if (x != "s534845" && y != "Venki@143"){
+                 alert("Invalid Username or Password. Please enter valid Credentials.")
+                 return false
+              }
+              else{
+                 return false
+              }
+            }
+         </script>
+   </head>
+   <body>
+
+
+
+      <div class="site-navbar py-2">
+         <div class="container">
+           <div class="d-flex align-items-center justify-content-between">
+             <div class="logo">
+               <div class="site-logo">
+                 <a href="index.html" class="js-logo-clone">The Health Care</a>
+               </div>
+             </div>
+             <div class="main-nav d-none d-lg-block">
+               <nav class="site-navigation text-right text-md-center" role="navigation">
+                 <ul class="site-menu js-clone-nav d-none d-lg-block">
+                   <li class="active"><a href="index.html">Home</a></li>
+                   <li><a href="./pharma/aboutNL.html">About</a></li>
+                   <li><a href="./pharma/contactNL.html">Contact</a></li>
+                 </ul>
+               </nav>
+             </div>
+             <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
+               class="icon-menu"></span></a>
+           </div>
+         </div>
+       </div>
+
+
+      <hr>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+                     <div class="row justify-content-center">
+                        <div class="col-md-6 login-form-1">
+                           <h3>Login</h3>
+                           <br>
+                           <form name = "form1"  method="post">
+                              
+                                 <input type="text" name="input1" class="form-control" placeholder="Username *"  required/><br>
+                                 <input type="password" name = "input2" class="form-control" placeholder="Password *" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least 1 number, 1 uppercase, 1 lowercase letter, and at least 5 or more characters" required  /><br>
+                                 <input type="button" class = "btnSubmit" value = "Login" onclick="myFunction()" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 <a href="#" class="ForgetPwd">Forget Password?</a>
+                           </form>
+                           <br>
+                           <h6 class="account"> Dont you have an account? Please register for a new account! </h6>
+                           <br>
+                           <div class="login_section">
+                              <div class="form-group login_btn">
+                                 <input type="button" class= "loginBtn" onclick="goToRegister()" value="Register" />
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  <div id="myModal" class="modal fade">
+                     <div class="modal-dialog modal-confirm">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <div class="icon-box">
+                                 <i class="material-icons">&#xE876;</i>
+                              </div>				
+                              <h4 class="modal-title">Success!</h4>	
+                           </div>
+                           <div class="modal-body">
+                              <p class="text-center">You have loggged in succesfully</p>
+                           </div>
+                           <div class="modal-footer">
+                              <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div> 
+            
+            </div>
+         </div>
+      </div>
+      <hr>
+      <footer>
+        <div class="container">
+              <div class="block-5 mb-5">
+                <h3 class="footer-heading mb-4">Contact Info</h3>
+                <ul class="list-unstyled">
+                  <li class="address"><a href="https://goo.gl/maps/cwJvvaLr3zUSdVRV6">Northwest Missouri State University, Maryville, Missouri, USA</a></li>
+                  <li class="phone"><a href="tel://16606606600">+1 660 660 6600</a></li>
+                  <li class="email"><a href="mailto:s534845@nwmissouri.edu">s534845@nwmissouri.edu</a></li>
+                </ul>
+              </div>
+        </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <script src="js/login.js"></script>
+   </body>
+</html>

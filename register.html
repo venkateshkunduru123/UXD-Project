@@ -1,0 +1,129 @@
+<!doctype html>  
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title >Register</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/login.css">
+      
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,700|Crimson+Text:400,400i" rel="stylesheet">
+        <link rel="stylesheet" href="./pharma/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./pharma/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./pharma/css/magnific-popup.css">
+        <link rel="stylesheet" href="./pharma/css/jquery-ui.css">
+        <link rel="stylesheet" href="./pharma/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./pharma/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./pharma/css/aos.css">
+        <link rel="stylesheet" href="./pharma/css/style.css">
+
+
+        <script>
+            function myFunction() {
+              var a = document.forms["form1"]["input1"].value;
+              var b = document.forms["form1"]["input2"].value;
+              var c = document.forms["form1"]["input3"].value;
+              var d = document.forms["form1"]["input4"].value;
+              if (a == "" || b == "" || c == "" || d == ""){
+                alert("Input fields should not be empty")
+              }
+              else if (c == d) {
+                alert("Registration successful, please Login.");
+                window.location.href = "./index.html"
+              }
+              else{
+                 alert("Password mismatch.")
+              }
+            }
+         </script>
+
+   </head>
+   <body>
+    <div class="site-navbar py-2">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="logo">
+              <div class="site-logo">
+                <a href="index.html" class="js-logo-clone">The Health Care</a>
+              </div>
+            </div>
+            <div class="main-nav d-none d-lg-block">
+              <nav class="site-navigation text-right text-md-center" role="navigation">
+                <ul class="site-menu js-clone-nav d-none d-lg-block">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="./pharma/aboutNL.html">About</a></li>
+                  <li><a href="./pharma/contactNL.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span
+              class="icon-menu"></span></a>
+          </div>
+        </div>
+      </div>
+
+<div class="container">
+<hr>
+<article class="card-body mx-auto" style="max-width: 400px;">
+	<h4 class="card-title mt-3 text-center">Create Account</h4>
+	<form  name = "form1" method="POST"> 
+	<div class="form-group input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="input1" class="form-control" placeholder="User Name" type="text" required>
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+		 </div>
+        <input name="input2" class="form-control" placeholder="Email address" type="email"  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+    </div> <!-- form-group// -->
+    
+   <!-- form-group end.// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input name="input3" class="form-control" placeholder="Enter Password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least 1 number, 1 uppercase, 1 lowercase letter, and at least 5 or more characters" required  >
+    </div> <!-- form-group// -->
+   <!-- form-group// -->
+   <div class="form-group input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+    </div>
+    <input name="input4" class="form-control" placeholder="Confirm Password" type="password" required>
+</div> <!-- form-group// -->
+<!-- form-group// -->                                      
+        <input type="button" class="btn loginBtn btn-block" value = "Register" onclick="myFunction()" />
+    <p class="text-center">Have an account? <a href="index.html">Log In</a> </p>                                                                 
+</form>
+</article>
+
+</div> 
+
+ <hr>
+ <footer>
+   <div class="container">
+         <div class="block-5 mb-5">
+           <h3 class="footer-heading mb-4">Contact Info</h3>
+           <ul class="list-unstyled">
+             <li class="address"><a href="https://goo.gl/maps/cwJvvaLr3zUSdVRV6">Northwest Missouri State University, Maryville, Missouri, USA</a></li>
+             <li class="phone"><a href="tel://16606606600">+1 660 660 6600</a></li>
+             <li class="email"><a href="mailto:s534845@nwmissouri.edu">s534845@nwmissouri.edu</a></li>
+           </ul>
+         </div>
+   </div>
+ </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<script src="js/register.js"></script>
+</body>
+</html>
+
